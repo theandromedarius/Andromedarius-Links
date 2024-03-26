@@ -31,7 +31,7 @@ const links = [
       { name: "Subtitle", url: "/download/subtitle", },
     ],
   },
-  
+
   {
     id: "/download/durability-ping",
     title: "Durability Ping!",
@@ -162,6 +162,7 @@ const links = [
       {
         name: "Java Version",
         url: "https://www.curseforge.com/minecraft/texture-packs/xalis-enchanted-books",
+        variant: "link-button-realm"
       },
       {
         name: "Home",

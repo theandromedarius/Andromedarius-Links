@@ -54,7 +54,7 @@ h1 {
 }
 
 /* Link Button */
-.link-button, .link-button-destructive {
+.link-button, .link-button-destructive, .link-button-realm {
   background-color: #3c8527;
   color: #ffffff;
   margin: 10px 0;
@@ -70,7 +70,7 @@ h1 {
 }
 
 /* Link Button Hover Effect */
-.link-button:hover, .link-button-destructive:hover {
+.link-button:hover, .link-button-destructive:hover, .link-button-realm:hover {
   background-color: #2a641c;
   transform: translateY(3px);
 }
@@ -81,6 +81,14 @@ h1 {
 
 .link-button-destructive:hover {
   background-color: #ad1d1d;
+}
+
+.link-button-realm {
+  background-color: #7345e5;
+}
+
+.link-button-realm:hover {
+  background-color: #4a1cac;
 }
 
 /* Responsive Media Queries */
