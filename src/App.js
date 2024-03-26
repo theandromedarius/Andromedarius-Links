@@ -1,24 +1,46 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Main from "./components/Main";
+
+const links = [
+  {
+    id: "durability-ping",
+    title: "Durability Ping!",
+    image: "https://api.mcpedl.com/storage/submissions/102913/100/thumbnail_1-520x245.png",
+    links: [
+      {
+        name: "LootLabs [MCPACK]",
+        url: "https://loot-link.com/s?oS9t",
+      },
+      {
+        name: "LootLabs [ZIP]",
+        url: "https://lootdest.com/s?oS9y",
+      },
+      {
+        name: "Linkvertise [MCPACK]",
+        url: "https://link-target.net/845273/durabilitypingmcpack-new",
+      },
+      {
+        name: "Linkvertise [ZIP]",
+        url: "https://direct-link.net/845273/durabilitypingzipnew",
+      },
+    ],
+  },
+];
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Routes>
+        {links.map((prop) => (
+          <Route
+            key={prop.id}
+            path={`/andromedarius-download/${prop.id}`}
+            element={<Main props={prop} />}
+          />
+        ))}
+      </Routes>
+    </Router>
   );
 }
 
