@@ -54,7 +54,7 @@ h1 {
 }
 
 /* Link Button */
-.link-button {
+.link-button, .link-button-destructive {
   background-color: #3c8527;
   color: #ffffff;
   margin: 10px 0;
@@ -70,9 +70,17 @@ h1 {
 }
 
 /* Link Button Hover Effect */
-.link-button:hover {
+.link-button:hover, .link-button-destructive:hover {
   background-color: #2a641c;
   transform: translateY(3px);
+}
+
+.link-button-destructive {
+  background-color: #ca3636;
+}
+
+.link-button-destructive:hover {
+  background-color: #ad1d1d;
 }
 
 /* Responsive Media Queries */

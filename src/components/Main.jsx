@@ -8,7 +8,7 @@ const Main = ({ props }) => {
       <img className="preview-image" src={props.image} alt={props.title} />
       <div className="links-container">
         {props.links.map((link) => (
-          <Link key={link.name} to={link.url} className="link-button">
+          <Link key={link.name} to={link.url} className={link.variant ? link.variant : 'link-button'}>
             {link.name}
           </Link>
         ))}

@@ -5,6 +5,10 @@ import icon from "./assets/icon.jpg";
 import durabilityPingThumb from "./assets/thumbnails/durability-ping.png";
 import coordinatesHudThumb from "./assets/thumbnails/coordinates-hud.png";
 import dayAndEntityCounterThumb from "./assets/thumbnails/day-and-entity-counter.png";
+import biomeCheckThumb from "./assets/thumbnails/biome-check.png";
+import tradeUnlockerThumb from "./assets/thumbnails/trade-unlocker.png";
+import visualizeEnchantedBookThumb from "./assets/thumbnails/visualize-enchanted-book.png";
+import circularHotbarThumb from "./assets/thumbnails/circular-hotbar.jpg";
 
 const links = [
   {
@@ -12,18 +16,13 @@ const links = [
     title: "Andromedarius Download Pages",
     image: icon,
     links: [
-      {
-        name: "Coordinates HUD",
-        url: "/download/coordinates-hud",
-      },
-      {
-        name: "Durability Ping!",
-        url: "/download/durability-ping",
-      },
-      {
-        name: "Day & Entity Counter",
-        url: "/download/day-and-entity-counter",
-      },
+      { name: "Coordinates HUD", url: "/download/coordinates-hud", },
+      { name: "Durability Ping!", url: "/download/durability-ping", },
+      { name: "Day & Entity Counter", url: "/download/day-and-entity-counter", },
+      { name: "Biome Check", url: "/download/biome-check", },
+      { name: "Trade Unlocker", url: "/download/trade-unlocker", },
+      { name: "Visualize ENchanted Book", url: "/download/visualize-enchanted-book", },
+      { name: "Circular Hotbar", url: "/download/circular-hotbar", },
     ],
   },
   {
@@ -47,6 +46,7 @@ const links = [
       {
         name: "Home",
         url: "/",
+        variant: "link-button-destructive"
       },
     ],
   },
@@ -66,6 +66,7 @@ const links = [
       {
         name: "Home",
         url: "/",
+        variant: "link-button-destructive"
       },
     ],
   },
@@ -85,6 +86,103 @@ const links = [
       {
         name: "Home",
         url: "/",
+        variant: "link-button-destructive"
+      },
+    ],
+  },
+  {
+    id: "/download/biome-check",
+    title: "Biome Check",
+    image: biomeCheckThumb,
+    links: [
+      {
+        name: "LootLabs",
+        url: "",
+      },
+      {
+        name: "Linkvertise",
+        url: "https://link-center.net/845273/biome-check-for-beta",
+      },
+      {
+        name: "Home",
+        url: "/",
+        variant: "link-button-destructive"
+      },
+    ],
+  },
+  {
+    id: "/download/trade-unlocker",
+    title: "Trade Unlocker",
+    image: tradeUnlockerThumb,
+    links: [
+      {
+        name: "LootLabs",
+        url: "",
+      },
+      {
+        name: "Linkvertise",
+        url: "https://link-hub.net/845273/trade-unlocker",
+      },
+      {
+        name: "Home",
+        url: "/",
+        variant: "link-button-destructive"
+      },
+    ],
+  },
+  {
+    id: "/download/visualize-enchanted-book",
+    title: "Visualize Enchanted Book",
+    image: visualizeEnchantedBookThumb,
+    links: [
+      {
+        name: "LootLabs",
+        url: "",
+      },
+      {
+        name: "Linkvertise [MCPACK]",
+        url: "https://link-hub.net/845273/veb-v102-mcpack",
+      },
+      {
+        name: "Linkvertise [ZIP]",
+        url: "https://direct-link.net/845273/veb-v102-zip",
+      },
+      {
+        name: "Java Version",
+        url: "https://www.curseforge.com/minecraft/texture-packs/xalis-enchanted-books",
+      },
+      {
+        name: "Home",
+        url: "/",
+        variant: "link-button-destructive"
+      },
+    ],
+  },
+  {
+    id: "/download/circular-hotbar",
+    title: "Circular Hotbar",
+    image: circularHotbarThumb,
+    links: [
+      {
+        name: "LootLabs [MCPACK]",
+        url: "https://lootdest.com/s?qrJ7",
+      },
+      {
+        name: "LootLabs [ZIP]",
+        url: "https://loot-link.com/s?qrJ9",
+      },
+      {
+        name: "Linkvertise [MCPACK]",
+        url: "https://link-target.net/845273/circular-hotbar-mcpack",
+      },
+      {
+        name: "Linkvertise [ZIP]",
+        url: "https://link-center.net/845273/circular-hotbar-zip",
+      },
+      {
+        name: "Home",
+        url: "/",
+        variant: "link-button-destructive"
       },
     ],
   },
