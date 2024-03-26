@@ -21,7 +21,7 @@ const links = [
       { name: "Day & Entity Counter", url: "/download/day-and-entity-counter", },
       { name: "Biome Check", url: "/download/biome-check", },
       { name: "Trade Unlocker", url: "/download/trade-unlocker", },
-      { name: "Visualize ENchanted Book", url: "/download/visualize-enchanted-book", },
+      { name: "Visualize Enchanted Book", url: "/download/visualize-enchanted-book", },
       { name: "Circular Hotbar", url: "/download/circular-hotbar", },
     ],
   },
