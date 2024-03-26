@@ -1,6 +1,6 @@
 @font-face {
-  font-family: 'Minecraft Ten';
-  src: url('./assets/MinecraftTen-VGORe.ttf') format('truetype');
+  font-family: "Minecraft Ten";
+  src: url("./assets/MinecraftTen-VGORe.ttf") format("truetype");
 }
 
 /* Reset CSS */
@@ -8,6 +8,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  text-decoration: none;
 }
 
 /* Main Container */
@@ -23,7 +24,7 @@
 
 /* Title */
 h1 {
-  font-family: 'Minecraft Ten', sans-serif;
+  font-family: "Minecraft Ten", sans-serif;
   font-size: 32px;
   text-align: center;
   margin-top: 0;
