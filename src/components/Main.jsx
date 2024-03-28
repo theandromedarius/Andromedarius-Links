@@ -6,13 +6,17 @@ const Main = ({ props }) => {
     <div className="main-container">
       <h1>{props.title}</h1>
       <img className="preview-image" src={props.image} alt={props.title} />
-      <div className="links-container">
+      
+      <div class="links-container">
         {props.links.map((link) => (
-          <Link key={link.name} to={link.url} className={link.variant ? link.variant : 'link-button'}>
-            {link.name}
-          </Link>
-        ))}
+          <div class="button-border" key={link.name}>
+            <button class={link.variant} onclick="location.href='{link.url}';">{link.name}</button>
+          </div>
+            )
+          )
+        }
       </div>
+      
     </div>
   );
 };
