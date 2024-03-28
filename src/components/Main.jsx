@@ -10,7 +10,7 @@ const Main = ({ props }) => {
 <div class="links-container">
           {props.links.map((link) => (
             <div class="button-border" key={link.name}>
-              <button className={link.variant} onclick="location.href={link.url};">{link.name}</button>
+              <button className={link.variant} onClick="location.href='{link.url}';">{link.name}</button>
             </div>
           ))}
        </div>
