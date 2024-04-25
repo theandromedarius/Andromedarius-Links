@@ -1,4 +1,4 @@
-import dynamicDayCounter from "../assets/download/DynamicDayCounter.zip";
+import dynamicDayCounter from "../assets/download/DynamicDayCounter";
 
 const files = [
   {
