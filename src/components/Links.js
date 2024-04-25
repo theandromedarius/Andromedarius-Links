@@ -9,7 +9,7 @@ import circularHotbarThumb from "../assets/thumbnails/circular-hotbar.jpg";
 import verticalHotbarThumb from "../assets/thumbnails/vertical-hotbar.png";
 import caveAndCliffStartAnimationThumb from "../assets/thumbnails/cave-and-cliff-start-animation.png";
 import subtitleThumb from "../assets/thumbnails/subtitle.png";
-import dynamicDayCounterThumb from "../assets/thumbnails/dynamicDayCounter.jpg";
+import dynamicDayCounterThumb from "../assets/thumbnails/dynamic-day-counter.jpg";
 
 const links = [
   {
