@@ -7,7 +7,8 @@ const DownloadFile = ({ props }) => {
   useEffect(() => {
     const downloadLink = document.createElement("a");
     downloadLink.href = props.filePath;
-    downloadLink.download = `hewahunja.mcpack`;
+    const uniqueId = Date.now(); // generate unique ID based on current timestamp
+    downloadLink.download = `${props.fileName}.${uniqueId}.${props.format}`;
     document.body.appendChild(downloadLink);
     downloadLink.click();
     document.body.removeChild(downloadLink);
