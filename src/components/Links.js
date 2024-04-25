@@ -32,6 +32,10 @@ const links = [
         url: "/download/cave-and-cliff-start-animation",
       },
       { name: "Subtitle", url: "/download/subtitle" },
+      {
+        name: "Test",
+        url: "/download/5a9e2fb5-76b6-4070-905e-c81751eef629",
+      },
     ],
   },
 
