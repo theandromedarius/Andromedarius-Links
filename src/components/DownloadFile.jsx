@@ -8,7 +8,7 @@ const DownloadFile = ({ props }) => {
     navigate("/");
     const downloadLink = document.createElement("a");
     downloadLink.href = props.filePath;
-    downloadLink.download = `${props.fileName}${props.format}`;
+    downloadLink.download = props.fileName;
     document.body.appendChild(downloadLink);
     downloadLink.click();
     document.body.removeChild(downloadLink);
