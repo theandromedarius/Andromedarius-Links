@@ -1,4 +1,4 @@
-import dynamicDayCounter from "../assets/download/DynamicDayCounter";
+import dynamicDayCounter from "../assets/download/DynamicDayCounter.mcpack";
 
 const files = [
   {
