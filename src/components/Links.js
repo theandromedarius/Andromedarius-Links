@@ -9,6 +9,7 @@ import circularHotbarThumb from "../assets/thumbnails/circular-hotbar.jpg";
 import verticalHotbarThumb from "../assets/thumbnails/vertical-hotbar.png";
 import caveAndCliffStartAnimationThumb from "../assets/thumbnails/cave-and-cliff-start-animation.png";
 import subtitleThumb from "../assets/thumbnails/subtitle.png";
+import dynamicDayCounterThumb from "../assets/thumbnails/dynamicDayCounter.jpg";
 
 const links = [
   {
@@ -32,6 +33,33 @@ const links = [
         url: "/download/cave-and-cliff-start-animation",
       },
       { name: "Subtitle", url: "/download/subtitle" },
+      { name: "Dynamic Day Counter", url: "/download/dynamic-day-counter" },
+    ],
+  },
+
+  {
+    id: "/download/dynamic-day-counter",
+    title: "Dynamic Day Counter",
+    image: dynamicDayCounterThumb,
+    links: [
+      { name: "LootLabs [MCPACK]", url: "https://loot-link.com/s?Adbl" },
+      {
+        name: "LootLabs [ZIP]",
+        url: "https://loot-link.com/s?Adc2",
+      },
+      {
+        name: "Linkvertise [MCPACK]",
+        url: "https://link-hub.net/845273/dynamic-daycounter-mcpack",
+      },
+      {
+        name: "Linkvertise [ZIP]",
+        url: "https://link-hub.net/845273/dynamic-day-counter-zip",
+      },
+      {
+        name: "Home",
+        url: "/",
+        variant: "link-button-destructive",
+      },
     ],
   },
 
