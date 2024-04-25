@@ -5,13 +5,12 @@ const DownloadFile = ({ props }) => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    const downloadUrl = process.env.PUBLIC_URL + props.filePath;
-    const link = document.createElement("a");
-    link.href = downloadUrl;
-    link.setAttribute("download", `${props.fileName}.${props.formatFile}`);
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
+    const downloadLink = document.createElement("a");
+    downloadLink.href = props.filePath;
+    downloadLink.download = `${props.fileName}.${props.format}`;
+    document.body.appendChild(downloadLink);
+    downloadLink.click();
+    document.body.removeChild(downloadLink);
     navigate("/");
   }, [navigate, props]);
 
