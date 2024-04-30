@@ -16,6 +16,7 @@ const links = [
     id: "/",
     title: "Andromedarius Download Pages",
     image: icon,
+    ignoreWebRecommend: true,
     links: [
       { name: "Coordinates HUD", url: "/download/coordinates-hud" },
       { name: "Durability Ping!", url: "/download/durability-ping" },

@@ -32,6 +32,15 @@ h1 {
   text-shadow: 6px 6px 5px rgba(255, 0, 0, 0.5);
 }
 
+p {
+  font-family: sans-serif;
+  font-style: italic;
+  font-size: 16px;
+  text-align: center;
+  margin-top: 0;
+  color: #ffffff;
+}
+
 /* Preview Image */
 .preview-image {
   max-width: 800px;
@@ -54,7 +63,9 @@ h1 {
 }
 
 /* Link Button */
-.link-button, .link-button-destructive, .link-button-realm {
+.link-button,
+.link-button-destructive,
+.link-button-realm {
   background-color: #3c8527;
   color: #ffffff;
   margin: 10px 0;
@@ -70,7 +81,9 @@ h1 {
 }
 
 /* Link Button Hover Effect */
-.link-button:hover, .link-button-destructive:hover, .link-button-realm:hover {
+.link-button:hover,
+.link-button-destructive:hover,
+.link-button-realm:hover {
   background-color: #2a641c;
   transform: translateY(3px);
 }
@@ -108,7 +121,6 @@ h1 {
 
 /* Dialogs */
 .dialog-content {
-  
 }
 
 .dark-dialog-background {
@@ -162,37 +174,36 @@ h1 {
   border: 2px solid #ffffff;
 }
 
-
 /* Light */
 .mc-neutral-button {
   padding-block: 10px;
   padding-inline: auto;
   margin-bottom: 4px;
   box-shadow: 0px 4px 0px #242425;
-  
-  border-top-color: rgba(255,255,255,0.2);
-  border-left-color: rgba(255,255,255,0.2);
-  border-bottom-color: rgba(255,255,255,0.1);
-  border-right-color: rgba(255,255,255,0.1);
+
+  border-top-color: rgba(255, 255, 255, 0.2);
+  border-left-color: rgba(255, 255, 255, 0.2);
+  border-bottom-color: rgba(255, 255, 255, 0.1);
+  border-right-color: rgba(255, 255, 255, 0.1);
   background-color: #313233;
   color: #ffffff;
 }
 
 .button-border:hover:not(:disabled) .mc-neutral-button {
-  border-top-color: rgba(255,255,255,0.1);
-  border-left-color: rgba(255,255,255,0.1);
-  border-bottom-color: rgba(0,0,0,0.4);
-  border-right-color: rgba(0,0,0,0.4);
+  border-top-color: rgba(255, 255, 255, 0.1);
+  border-left-color: rgba(255, 255, 255, 0.1);
+  border-bottom-color: rgba(0, 0, 0, 0.4);
+  border-right-color: rgba(0, 0, 0, 0.4);
   background-color: #48494a;
 }
 
 .button-border:active:not(:disabled) .mc-neutral-button {
   margin-bottom: 0;
   box-shadow: none;
-  border-top-color: rgba(0,0,0,0.8);
-  border-left-color: rgba(0,0,0,0.8);
-  border-bottom-color: rgba(255,255,255,0.1);
-  border-right-color: rgba(255,255,255,0.1);
+  border-top-color: rgba(0, 0, 0, 0.8);
+  border-left-color: rgba(0, 0, 0, 0.8);
+  border-bottom-color: rgba(255, 255, 255, 0.1);
+  border-right-color: rgba(255, 255, 255, 0.1);
   background-color: #242425;
   color: #ffffff;
 }
@@ -203,30 +214,30 @@ h1 {
   padding-inline: auto;
   margin-bottom: 4px;
   box-shadow: 0px 4px 0px #1d4d13;
-  
-  border-top-color: rgba(255,255,255,0.2);
-  border-left-color: rgba(255,255,255,0.2);
-  border-bottom-color: rgba(255,255,255,0.1);
-  border-right-color: rgba(255,255,255,0.1);
+
+  border-top-color: rgba(255, 255, 255, 0.2);
+  border-left-color: rgba(255, 255, 255, 0.2);
+  border-bottom-color: rgba(255, 255, 255, 0.1);
+  border-right-color: rgba(255, 255, 255, 0.1);
   background-color: #3c8527;
   color: #ffffff;
 }
 
 .button-border:hover:not(:disabled) .mc-primary-button {
-  border-top-color: rgba(255,255,255,0.4);
-  border-left-color: rgba(255,255,255,0.4);
-  border-bottom-color: rgba(255,255,255,0.3);
-  border-right-color: rgba(255,255,255,0.3);
+  border-top-color: rgba(255, 255, 255, 0.4);
+  border-left-color: rgba(255, 255, 255, 0.4);
+  border-bottom-color: rgba(255, 255, 255, 0.3);
+  border-right-color: rgba(255, 255, 255, 0.3);
   background-color: #2a641c;
 }
 
 .button-border:active:not(:disabled) .mc-primary-button {
   margin-bottom: 0;
   box-shadow: none;
-  border-top-color: rgba(0,0,0,0.4);
-  border-left-color: rgba(0,0,0,0.4);
-  border-bottom-color: rgba(255,255,255,0.1);
-  border-right-color: rgba(255,255,255,0.1);
+  border-top-color: rgba(0, 0, 0, 0.4);
+  border-left-color: rgba(0, 0, 0, 0.4);
+  border-bottom-color: rgba(255, 255, 255, 0.1);
+  border-right-color: rgba(255, 255, 255, 0.1);
   background-color: #1d4d13;
   color: #ffffff;
 }
@@ -237,30 +248,30 @@ h1 {
   padding-inline: auto;
   margin-bottom: 4px;
   box-shadow: 0px 4px 0px #8c8d90;
-  
-  border-top-color: rgba(255,255,255,0.6);
-  border-left-color: rgba(255,255,255,0.6);
-  border-bottom-color: rgba(255,255,255,0.4);
-  border-right-color: rgba(255,255,255,0.4);
+
+  border-top-color: rgba(255, 255, 255, 0.6);
+  border-left-color: rgba(255, 255, 255, 0.6);
+  border-bottom-color: rgba(255, 255, 255, 0.4);
+  border-right-color: rgba(255, 255, 255, 0.4);
   background-color: #d0d1d4;
   color: #48494a;
 }
 
 .button-border:hover:not(:disabled) .mc-secondary-button {
-  border-top-color: rgba(255,255,255,0.8);
-  border-left-color: rgba(255,255,255,0.8);
-  border-bottom-color: rgba(255,255,255,0.6);
-  border-right-color: rgba(255,255,255,0.6);
+  border-top-color: rgba(255, 255, 255, 0.8);
+  border-left-color: rgba(255, 255, 255, 0.8);
+  border-bottom-color: rgba(255, 255, 255, 0.6);
+  border-right-color: rgba(255, 255, 255, 0.6);
   background-color: #b1b2b5;
 }
 
 .button-border:active:not(:disabled) .mc-secondary-button {
   margin-bottom: 0;
   box-shadow: none;
-  border-top-color: rgba(255,255,255,0.8);
-  border-left-color: rgba(255,255,255,0.8);
-  border-bottom-color: rgba(255,255,255,0.6);
-  border-right-color: rgba(255,255,255,0.6);
+  border-top-color: rgba(255, 255, 255, 0.8);
+  border-left-color: rgba(255, 255, 255, 0.8);
+  border-bottom-color: rgba(255, 255, 255, 0.6);
+  border-right-color: rgba(255, 255, 255, 0.6);
   background-color: #8c8d90;
   color: #ffffff;
 }
@@ -271,30 +282,30 @@ h1 {
   padding-inline: auto;
   margin-bottom: 4px;
   box-shadow: 0px 4px 0px #ad1d1d;
-  
-  border-top-color: rgba(255,255,255,0.2);
-  border-left-color: rgba(255,255,255,0.2);
-  border-bottom-color: rgba(255,255,255,0.1);
-  border-right-color: rgba(255,255,255,0.1);
+
+  border-top-color: rgba(255, 255, 255, 0.2);
+  border-left-color: rgba(255, 255, 255, 0.2);
+  border-bottom-color: rgba(255, 255, 255, 0.1);
+  border-right-color: rgba(255, 255, 255, 0.1);
   background-color: #ca3636;
   color: #fff;
 }
 
 .button-border:hover:not(:disabled) .mc-destructive-button {
-  border-top-color: rgba(255,255,255,0.5);
-  border-left-color: rgba(255,255,255,0.5);
-  border-bottom-color: rgba(255,255,255,0.4);
-  border-right-color: rgba(255,255,255,0.4);
+  border-top-color: rgba(255, 255, 255, 0.5);
+  border-left-color: rgba(255, 255, 255, 0.5);
+  border-bottom-color: rgba(255, 255, 255, 0.4);
+  border-right-color: rgba(255, 255, 255, 0.4);
   background-color: #c02d2d;
 }
 
 .button-border:active:not(:disabled) .mc-destructive-button {
   margin-bottom: 0;
   box-shadow: none;
-  border-top-color: rgba(5,0,41,0.4);
-  border-left-color: rgba(5,0,41,0.4);
-  border-bottom-color: rgba(202,54,54,0.5);
-  border-right-color: rgba(202,54,54,0.5);
+  border-top-color: rgba(5, 0, 41, 0.4);
+  border-left-color: rgba(5, 0, 41, 0.4);
+  border-bottom-color: rgba(202, 54, 54, 0.5);
+  border-right-color: rgba(202, 54, 54, 0.5);
   background-color: #ad1d1d;
   color: #fff;
 }
@@ -305,30 +316,30 @@ h1 {
   padding-inline: auto;
   margin-bottom: 4px;
   box-shadow: 0px 4px 0px #1d4f91;
-  
-  border-top-color: rgba(255,255,255,0.2);
-  border-left-color: rgba(255,255,255,0.2);
-  border-bottom-color: rgba(255,255,255,0.1);
-  border-right-color: rgba(255,255,255,0.1);
+
+  border-top-color: rgba(255, 255, 255, 0.2);
+  border-left-color: rgba(255, 255, 255, 0.2);
+  border-bottom-color: rgba(255, 255, 255, 0.1);
+  border-right-color: rgba(255, 255, 255, 0.1);
   background-color: #2e6be5;
   color: #fff;
 }
 
 .button-border:hover:not(:disabled) .mc-informative-button {
-  border-top-color: rgba(255,255,255,0.3);
-  border-left-color: rgba(255,255,255,0.3);
-  border-bottom-color: rgba(255,255,255,0.2);
-  border-right-color: rgba(255,255,255,0.2);
+  border-top-color: rgba(255, 255, 255, 0.3);
+  border-left-color: rgba(255, 255, 255, 0.3);
+  border-bottom-color: rgba(255, 255, 255, 0.2);
+  border-right-color: rgba(255, 255, 255, 0.2);
   background-color: #255ec1;
 }
 
 .button-border:active:not(:disabled) .mc-informative-button {
   margin-bottom: 0;
   box-shadow: none;
-  border-top-color: rgba(5,0,41,0.2);
-  border-left-color: rgba(5,0,41,0.2);
-  border-bottom-color: rgba(255,255,255,0.3);
-  border-right-color: rgba(255,255,255,0.3);
+  border-top-color: rgba(5, 0, 41, 0.2);
+  border-left-color: rgba(5, 0, 41, 0.2);
+  border-bottom-color: rgba(255, 255, 255, 0.3);
+  border-right-color: rgba(255, 255, 255, 0.3);
   background-color: #1d4f91;
   color: #fff;
 }
@@ -338,32 +349,31 @@ h1 {
   padding-block: 10px;
   padding-inline: auto;
   margin-bottom: 4px;
-  box-shadow: 0px 4px 0px #4A1CAC;
+  box-shadow: 0px 4px 0px #4a1cac;
 
-  border-top-color: rgba(208,131,255,0.5);
-  border-left-color: rgba(208,131,255,0.5);
-  border-bottom-color: rgba(182,81,245,0.4);
-  border-right-color: rgba(182,81,245,0.4);
-  background-color: #7345E5;
+  border-top-color: rgba(208, 131, 255, 0.5);
+  border-left-color: rgba(208, 131, 255, 0.5);
+  border-bottom-color: rgba(182, 81, 245, 0.4);
+  border-right-color: rgba(182, 81, 245, 0.4);
+  background-color: #7345e5;
   color: #fff;
 }
 
-
 .button-border:hover:not(:disabled) .mc-realms-button {
-  border-top-color: rgba(208,131,255,0.7);
-  border-left-color: rgba(208,131,255,0.7);
-  border-bottom-color: rgba(182,81,245,0.6);
-  border-right-color: rgba(182,81,245,0.6);
-  background-color: #5D2CC6;
+  border-top-color: rgba(208, 131, 255, 0.7);
+  border-left-color: rgba(208, 131, 255, 0.7);
+  border-bottom-color: rgba(182, 81, 245, 0.6);
+  border-right-color: rgba(182, 81, 245, 0.6);
+  background-color: #5d2cc6;
 }
 
 .button-border:active:not(:disabled) .mc-realms-button {
   margin-bottom: 0;
   box-shadow: none;
-  border-top-color: rgba(5,0,41,0.4);
-  border-left-color: rgba(5,0,41,0.4);
-  border-bottom-color: rgba(208,131,255,0.5);
-  border-right-color: rgba(208,131,255,0.5);
-  background-color: #4A1CAC;
+  border-top-color: rgba(5, 0, 41, 0.4);
+  border-left-color: rgba(5, 0, 41, 0.4);
+  border-bottom-color: rgba(208, 131, 255, 0.5);
+  border-right-color: rgba(208, 131, 255, 0.5);
+  background-color: #4a1cac;
   color: #fff;
 }
