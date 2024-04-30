@@ -9,7 +9,7 @@ const files = [
   {
     id: "/download/1d4b7e66-8c8a-4cb0-ab3d-9d9549977fd4",
     fileName: "dynamicDayCounter",
-    filePath: "/downloads/DynamicDayCounter.zip",
+    filePath: "/downloads/DynamicDayCounter.mcpack",
     formatFile: "mcpack",
   },
 
@@ -23,7 +23,7 @@ const files = [
   {
     id: "/download/6baf62e6-77ee-44cb-8992-6450f7000520",
     fileName: "CircularHotbar",
-    filePath: "/downloads/CircularHotbar.zip",
+    filePath: "/downloads/CircularHotbar.mcpack",
     formatFile: "mcpack",
   },
 
@@ -37,7 +37,7 @@ const files = [
   {
     id: "/download/34dfee07-3f49-460d-8ff5-0d62d07398ec",
     fileName: "DurabilityPing",
-    filePath: "/downloads/DurabilityPing.zip",
+    filePath: "/downloads/DurabilityPing.mcpack",
     formatFile: "mcpack",
   },
 
@@ -51,7 +51,7 @@ const files = [
   {
     id: "/download/aaef9ccd-8121-4e57-bc1c-3eed04fc8aa3",
     fileName: "VisualizeEnchantedBook",
-    filePath: "/downloads/VisualizeEnchantedBook.zip",
+    filePath: "/downloads/VisualizeEnchantedBook.mcpack",
     formatFile: "mcpack",
   },
 ];
