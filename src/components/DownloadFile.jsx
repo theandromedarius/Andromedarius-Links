@@ -24,6 +24,7 @@ const DownloadFile = ({ props }) => {
 
         const downloadLink = document.createElement("a");
         downloadLink.href = url;
+        downloadLink.type = "application/octet-stream";
         downloadLink.download = `${props.fileName}-${serialNumber}.${props.formatFile}`;
         document.body.appendChild(downloadLink);
         downloadLink.click();
