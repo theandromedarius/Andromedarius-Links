@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 
-const allowedBrowsers = ["Chrome", "Edg", "Firefox"];
+const allowedBrowsers = ["Chrome", "Edg", "Firefox", "Vivaldi"];
 const adsLink = [
   "https://www.highcpmgate.com/gg3ifc9g3?key=c0c33d1ec577cb6f17c2485c43283270",
   "https://www.highcpmgate.com/xswbx9b84?key=89c672edb35a0fa0e32095816368abbd",
@@ -14,7 +14,9 @@ const DownloadFile = ({ props }) => {
     );
 
     if (!isAllowedBrowser) {
-      alert("Jika download error gunakan browser: Chrome, Edge, FireFox");
+      window.alert(
+        "If download error please use beowser: Chrome, Edge, FireFox, Vivaldi"
+      );
     }
 
     const randomLinks = adsLink[Math.floor(Math.random() * adsLink.length)];

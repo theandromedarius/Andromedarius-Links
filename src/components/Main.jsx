@@ -7,7 +7,7 @@ const Main = ({ props }) => {
       <h1>{props.title}</h1>
       <img className="preview-image" src={props.image} alt={props.title} />
       {!props.ignoreWebRecommend && (
-        <p>Recommended Browser: Chrome, Edge, FireFox</p>
+        <p>Recommended Browser: Chrome, Edge, FireFox, Vivaldi</p>
       )}
       <div className="links-container">
         {props.links.map((link) => (
