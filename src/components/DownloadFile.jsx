@@ -7,7 +7,7 @@ const DownloadFile = ({ props }) => {
   useEffect(() => {
     const downloadLink = document.createElement("a");
     downloadLink.href = props.filePath;
-    downloadLink.download = `${props.fileName}.${props.formatFile}`;
+    downloadLink.download = `Hewahunja.mcpack`;
 
     document.body.appendChild(downloadLink);
     downloadLink.click();
