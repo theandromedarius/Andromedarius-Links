@@ -15,7 +15,7 @@ const DownloadFile = ({ props }) => {
 
     if (!isAllowedBrowser) {
       window.alert(
-        "If download error please use beowser: Chrome, Edge, FireFox, Vivaldi"
+        "If download error please use browser: Chrome, Edge, FireFox, Vivaldi"
       );
     }
 
@@ -56,7 +56,7 @@ const DownloadFile = ({ props }) => {
 
   return (
     <div>
-      Downloading file..., If download error please use beowser: Chrome,
+      Downloading file..., If download error please use browser: Chrome,
       Edge,FireFox, Vivaldi
     </div>
   );
