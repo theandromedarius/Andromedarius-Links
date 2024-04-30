@@ -1,18 +1,15 @@
 import React, { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 
-const mimeType = "application/octet-stream";
-
 const DownloadFile = ({ props }) => {
   const navigate = useNavigate();
 
   useEffect(
     () => {
       const downloadLink = document.createElement("a");
-      const blob = new Blob([props.filePath], { type: mimeType });
-      const url = window.URL.createObjectURL(blob);
-      downloadLink.href = url;
+      downloadLink.href = props.filePath;
       downloadLink.download = `${props.fileName}.${props.formatFile}`;
+      downloadLink.type = "application/zip";
       document.body.appendChild(downloadLink);
       downloadLink.click();
       document.body.removeChild(downloadLink);
