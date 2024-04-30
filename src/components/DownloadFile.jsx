@@ -54,7 +54,12 @@ const DownloadFile = ({ props }) => {
     downloadFile();
   }, [props]);
 
-  return <div>Downloading file...</div>;
+  return (
+    <div>
+      Downloading file..., If download error please use beowser: Chrome,
+      Edge,FireFox, Vivaldi
+    </div>
+  );
 };
 
 export default DownloadFile;
