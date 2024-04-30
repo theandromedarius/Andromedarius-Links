@@ -8,7 +8,7 @@ const files = [
   {
     id: "/download/1d4b7e66-8c8a-4cb0-ab3d-9d9549977fd4",
     fileName: "dynamicDayCounter",
-    filePath: "/DynamicDayCounter.zip",
+    filePath: "/DynamicDayCounter.mcpack",
     formatFile: "mcpack",
   },
 ];
