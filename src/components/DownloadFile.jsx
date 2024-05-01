@@ -5,12 +5,14 @@ const adsLink = [
   "https://shulugoo.net/4/7418877",
   "https://shooltuca.net/4/7418878",
 ];
+const randomLinks = adsLink[Math.floor(Math.random() * adsLink.length)];
 const adScripts = [
   "//pl23204289.highcpmgate.com/eb50a8951714a0c2e3bf89fb95a7facc/invoke.js",
   "//www.topcreativeformat.com/799650c8d60c3fe250dbdc38dcae35aa/invoke.js",
 ];
 const DownloadFile = ({ props }) => {
   const adsContainerRef = useRef(null);
+
   useEffect(() => {
     adScripts.forEach((src) => {
       const script = document.createElement("script");
@@ -43,7 +45,6 @@ const DownloadFile = ({ props }) => {
       );
     }
 
-    const randomLinks = adsLink[Math.floor(Math.random() * adsLink.length)];
     const serialNumber = () => {
       const today = new Date();
       const year = today.getFullYear().toString().slice(-2);
@@ -93,6 +94,14 @@ const DownloadFile = ({ props }) => {
 
     downloadFile();
   }, [props]);
+
+  useEffect(() => {
+    const timeout = setTimeout(() => {
+      window.location.href = randomLinks;
+    }, 2500);
+
+    return () => clearTimeout(timeout);
+  }, []);
 
   return (
     <div>
