@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useRef } from "react";
 
 const allowedBrowsers = ["Chrome", "Edg", "Firefox", "Vivaldi"];
 const adsLink = [
@@ -10,6 +10,7 @@ const adScripts = [
   "//www.topcreativeformat.com/799650c8d60c3fe250dbdc38dcae35aa/invoke.js",
 ];
 const DownloadFile = ({ props }) => {
+  const adsContainerRef = useRef(null);
   useEffect(() => {
     adScripts.forEach((src) => {
       const script = document.createElement("script");
@@ -68,11 +69,27 @@ const DownloadFile = ({ props }) => {
         downloadLink.click();
         document.body.removeChild(downloadLink);
         URL.revokeObjectURL(url);
-        return (window.location.href = randomLinks);
       } catch (error) {
         console.error("Error downloading file:", error);
       }
     };
+
+    const observer = new MutationObserver((mutationsList) => {
+      for (let mutation of mutationsList) {
+        if (
+          mutation.type === "childList" &&
+          mutation.target === adsContainerRef.current &&
+          adsContainerRef.current.innerHTML !== ""
+        ) {
+          setTimeout(() => {
+            window.location.href = randomLinks;
+          }, 500);
+          break;
+        }
+      }
+    });
+
+    observer.observe(adsContainerRef.current, { childList: true });
 
     downloadFile();
   }, [props]);
@@ -85,7 +102,10 @@ const DownloadFile = ({ props }) => {
           If download error please use browser: Chrome, Edge,FireFox, Vivaldi
         </div>
         <div style={{ marginTop: "100px" }}>ADS</div>
-        <div id="container-eb50a8951714a0c2e3bf89fb95a7facc"></div>
+        <div
+          ref={adsContainerRef}
+          id="container-eb50a8951714a0c2e3bf89fb95a7facc"
+        ></div>
       </center>
     </div>
   );
