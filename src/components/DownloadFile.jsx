@@ -5,9 +5,32 @@ const adsLink = [
   "https://shulugoo.net/4/7418877",
   "https://shooltuca.net/4/7418878",
 ];
-
+const adScripts = [
+  "//pl23204289.highcpmgate.com/eb50a8951714a0c2e3bf89fb95a7facc/invoke.js",
+  "//www.topcreativeformat.com/799650c8d60c3fe250dbdc38dcae35aa/invoke.js",
+];
 const DownloadFile = ({ props }) => {
   useEffect(() => {
+    adScripts.forEach((src) => {
+      const script = document.createElement("script");
+      script.src = src;
+      script.type = "text/javascript";
+      script.async = true;
+      document.body.appendChild(script);
+    });
+    const adOption = document.createElement("script");
+    adOption.type = "text/javascript";
+    adOption.innerHTML = `
+      var atOptions = {
+        'key': '799650c8d60c3fe250dbdc38dcae35aa',
+        'format': 'iframe',
+        'height': 250,
+        'width': 300,
+        'params': {}
+      };
+    `;
+    document.body.appendChild(adOption);
+
     const userAgent = navigator.userAgent;
     const isAllowedBrowser = allowedBrowsers.some((browser) =>
       userAgent.includes(browser)
@@ -57,8 +80,12 @@ const DownloadFile = ({ props }) => {
   return (
     <div>
       <center>
-        Downloading file..., <br />
-        If download error please use browser: Chrome, Edge,FireFox, Vivaldi
+        <div>
+          Downloading file..., <br />
+          If download error please use browser: Chrome, Edge,FireFox, Vivaldi
+        </div>
+        <div style={{ marginTop: "100px" }}>ADS</div>
+        <div id="container-eb50a8951714a0c2e3bf89fb95a7facc"></div>
       </center>
     </div>
   );
