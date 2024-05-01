@@ -2,8 +2,8 @@ import React, { useEffect } from "react";
 
 const allowedBrowsers = ["Chrome", "Edg", "Firefox", "Vivaldi"];
 const adsLink = [
-  "https://www.highcpmgate.com/gg3ifc9g3?key=c0c33d1ec577cb6f17c2485c43283270",
-  "https://www.highcpmgate.com/xswbx9b84?key=89c672edb35a0fa0e32095816368abbd",
+  "https://shulugoo.net/4/7418877",
+  "https://shooltuca.net/4/7418878",
 ];
 
 const DownloadFile = ({ props }) => {
