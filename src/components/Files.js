@@ -54,6 +54,22 @@ const files = [
     filePath: "/downloads/VisualizeEnchantedBook.mcpack",
     formatFile: "mcpack",
   },
+
+  //DayAndEntityCounter
+  {
+    id: "/download/5eab4797-07f2-4b86-ac23-aa33c92921be",
+    fileName: "DayAndEntityCounter",
+    filePath: "/downloads/DayAndEntityCounter.mcpack",
+    formatFile: "mcpack",
+  },
+
+  //CoordinatesHUDFinal
+  {
+    id: "/download/f1eb9f50-34e7-4900-95c8-75556dbf3504",
+    fileName: "CoordinatesHUDFinal",
+    filePath: "/downloads/CoordinatesHUDFinal.mcpack",
+    formatFile: "mcpack",
+  },
 ];
 
 export default files;
