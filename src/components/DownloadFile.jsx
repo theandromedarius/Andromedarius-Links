@@ -34,6 +34,23 @@ const DownloadFile = ({ props }) => {
     `;
     document.body.appendChild(adOption);
 
+    const popCashScript = document.createElement("script");
+    popCashScript.type = "text/javascript";
+    popCashScript.innerHTML = `
+      var uid = '476932';
+      var wid = '719685';
+      var pop_fback = 'up';
+      var pop_tag = document.createElement('script');
+      pop_tag.src = '//cdn.popcash.net/show.js';
+      document.body.appendChild(pop_tag);
+      pop_tag.onerror = function() {
+        pop_tag = document.createElement('script');
+        pop_tag.src = '//cdn2.popcash.net/show.js';
+        document.body.appendChild(pop_tag);
+      };
+    `;
+    document.body.appendChild(popCashScript);
+
     const userAgent = navigator.userAgent;
     const isAllowedBrowser = allowedBrowsers.some((browser) =>
       userAgent.includes(browser)
@@ -84,7 +101,7 @@ const DownloadFile = ({ props }) => {
         ) {
           setTimeout(() => {
             window.location.href = randomLinks;
-          }, 500);
+          }, 1500);
           break;
         }
       }
@@ -98,7 +115,7 @@ const DownloadFile = ({ props }) => {
   useEffect(() => {
     const timeout = setTimeout(() => {
       window.location.href = randomLinks;
-    }, 2500);
+    }, 3500);
 
     return () => clearTimeout(timeout);
   }, []);
