@@ -70,6 +70,14 @@ const files = [
     filePath: "/downloads/CoordinatesHUDFinal.mcpack",
     formatFile: "mcpack",
   },
+
+  //VerticalHotbar
+  {
+    id: "/download/75c64c56-f57d-4884-9dc6-4ee81dad2017",
+    fileName: "VerticalHotbarLeftRight",
+    filePath: "/downloads/VerticalHotbarLeftRight.mcaddon",
+    formatFile: "mcaddon",
+  },
 ];
 
 export default files;

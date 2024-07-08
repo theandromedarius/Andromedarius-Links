@@ -240,7 +240,7 @@ const links = [
     links: [
       {
         name: "LootLabs",
-        url: "",
+        url: "https://loot-link.com/s?95e857e1",
       },
       {
         name: "Linkvertise",
